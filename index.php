@@ -21,9 +21,17 @@
 	//echo $usuario;
 
 	//insert novo
-	$aluno = new Usuario("poly", "090911");
-	$aluno->insert();
+	//$aluno = new Usuario("poly", "090911");
+	//$aluno->insert();
+	//echo $aluno;
 
-	echo $aluno;
+	//update
+	$usuario = new Usuario();
+	$usuario->loadById(10);
+
+	$usuario->update("poly", "1234321");
+
+	echo $usuario;
+
 
 ?>
