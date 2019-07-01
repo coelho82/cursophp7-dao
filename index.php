@@ -25,13 +25,16 @@
 	//$aluno->insert();
 	//echo $aluno;
 
-	//update
+	//update -> atualizar
+	//$usuario = new Usuario();
+	//$usuario->loadById(10);
+	//$usuario->update("poly", "1234321");
+	//echo $usuario;
+
+	//deletar
 	$usuario = new Usuario();
-	$usuario->loadById(10);
-
-	$usuario->update("poly", "1234321");
-
+	$usuario->loadById(7);
+	$usuario->delete();
 	echo $usuario;
-
 
 ?>
